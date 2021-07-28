@@ -22,7 +22,7 @@ def capacity():
     #Use capacity for the name of the function.
 
 
-    capR = input("What is the capacity of the room?\n\t Enter Here: ")
+    capR = int(input("What is the capacity of the room?\n\t Enter Here: "))
 
     return capR
 
@@ -30,9 +30,9 @@ def capacity():
 
 def attendees():
     #A function that asks the user for the number of people (attendees)  attending the conference and returns that value. Use attendees for the name of the function.
-    att = input("\n\nHow many people want to attend this event?\n\t Enter Here:  ")
+    att = int(input("\n\nHow many people want to attend this event?\n\t Enter Here:  "))
 
-    return attendees
+    return att
 
 
 def register(capR,att):
@@ -61,7 +61,7 @@ def checkings():
     answer = input("\nDo you want to check anymore rooms?\n[y/n]: ")
 
     #remove the case sensitivity!!!!
-    answer = answer.lower
+    answer = answer.lower()
 
     while answer !='y' and answer != 'n':
         print("ERROR NOT A VALID INPUT BZT BZT")
@@ -70,9 +70,9 @@ def checkings():
 
         #remove the case sensitivity again!
 
-        answer = answer.lower
+        answer = answer.lower()
 
-        return answer
+    return answer
 
 
 
@@ -92,3 +92,5 @@ while answer == 'y':
 
 
     answer = checkings()
+
+print("Thank you have a beautiful day!")
