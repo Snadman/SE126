@@ -89,9 +89,11 @@ with open("/Classes/SE126/Lab2/Lab2_CSV/lab2b.csv") as csvfile:
                 ram = ram
 
             #since there are no HD2's the array # for the os and the yr changes and are reduced by one
+            
+            twoDisk = print("")
             os = rec[6]
             yr = rec[7]
-            print("{0}\t\t{1:18}{2:15}{3:18}{4:16}{5}\t\t\t\t\t{6}\t{7}".format(type,brand,cpu,ram,oneDisk,hdd,os,yr))
+            print("{0}\t\t{1:18}{2:15}{3:18}{4:16}{5}\t\t  {6}\t\t\t{7}\t{8}\n".format(type,brand,cpu,ram,oneDisk,hdd,twoDisk,os,yr))
 
         elif(hdd == 2):
 
@@ -106,11 +108,11 @@ with open("/Classes/SE126/Lab2/Lab2_CSV/lab2b.csv") as csvfile:
 
             os = rec[7]
             yr = rec[8]
-            print("{0}\t\t{1:18}{2:15}{3:18}{4:16}{5}\t\t  {6}\t\t\t{7}\t{8}".format(type,brand,cpu,ram,oneDisk,hdd,twoDisk,os,yr))
+            print("{0}\t\t{1:18}{2:15}{3:18}{4:16}{5}\t\t  {6}\t\t\t{7}\t{8}\n".format(type,brand,cpu,ram,oneDisk,hdd,twoDisk,os,yr))
 
     
     print("__________________________________________________________________________________________________________________________________________")
     print("Number of computers:\t {0} \n" .format(total_computers))
-    print("Out of the {0} computers only {1} are desktops\n".format(total_computers,total_laptops))
+    print("Out of the {0} computers only {1} are desktops\n".format(total_computers,total_desktop))
     print("Out of the {0} computers only {1} are laptops\n".format(total_computers,total_laptops))
     print("Only {0} of them have a 2nd Disk Drive".format(total_2ndDrive))
